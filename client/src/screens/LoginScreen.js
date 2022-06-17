@@ -41,24 +41,31 @@ const LoginScreen = () => {
       {loading && <Loader />}
       <Form onSubmit={submitHandler}>
         <Form.Group controlId='email'>
-          <Form.Label>Email Address</Form.Label>
+          <Form.Label data-testid='emaillabel'>Email Address</Form.Label>
           <Form.Control
             type='email'
             placeholder='Enter email'
             value={email}
+            data-testid='emaillabelInput'
             onChange={e => setEmail(e.target.value)}
           />
         </Form.Group>
         <Form.Group controlId='password'>
-          <Form.Label>Password</Form.Label>
+          <Form.Label data-testid='emailpassword'>Password</Form.Label>
           <Form.Control
             type='password'
             placeholder='Enter password'
+            data-testid='emailPassword'
             value={password}
             onChange={e => setPassword(e.target.value)}
           />
         </Form.Group>
-        <Button type='submit' variant='primary' className='mt-3'>
+        <Button
+          type='submit'
+          variant='primary'
+          className='mt-3'
+          data-testid='loginButton'
+        >
           Sign In
         </Button>
       </Form>

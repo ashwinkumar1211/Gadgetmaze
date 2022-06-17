@@ -9,7 +9,7 @@ import FormContainerHere from '../components/FormContainerHere';
 import CheckoutSteps from '../components/CheckoutSteps';
 import { savePaymentMethod } from '../actions/cartActions';
 
-export const PaymentScreen = ({ history }) => {
+export const PaymentScreen = () => {
   const cart = useSelector(state => state.cart);
   const { shippingAddress } = cart;
 

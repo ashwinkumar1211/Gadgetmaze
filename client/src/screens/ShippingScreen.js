@@ -6,7 +6,7 @@ import FormContainerHere from '../components/FormContainerHere';
 import CheckoutSteps from '../components/CheckoutSteps';
 import { saveShippingAddress } from '../actions/cartActions';
 
-export const ShippingScreen = ({ history }) => {
+export const ShippingScreen = () => {
   const cart = useSelector(state => state.cart);
   const { shippingAddress } = cart;
 

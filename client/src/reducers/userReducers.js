@@ -27,6 +27,12 @@ import {
   USER_UPDATE_PROFILE_RESET,
 } from '../constants/userConstants';
 
+export const initialState = {
+  userInfo: [],
+  loading: false,
+  error: [],
+};
+
 export const userLoginReducer = (state = {}, action) => {
   switch (action.type) {
     case USER_LOGIN_REQUEST:

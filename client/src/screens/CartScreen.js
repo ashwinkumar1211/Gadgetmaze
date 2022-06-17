@@ -13,7 +13,7 @@ import {
 import Message from '../components/Message';
 import { addToCart, removeFromCart } from '../actions/cartActions';
 import { Container } from 'react-bootstrap';
-import Footer from '../components/Footer';
+
 const CartScreen = () => {
   const { id } = useParams();
 

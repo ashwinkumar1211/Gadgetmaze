@@ -32,7 +32,7 @@ const PlaceOrderScreen = () => {
 
   cart.shippingPrice = addDecimals(cart.itemsPrice > 100 ? 0 : 100);
 
-  cart.taxPrice = cart.taxPrice = addDecimals(
+  cart.taxPrice = addDecimals(
     Number((0.15 * Number(cart.itemsPrice)).toFixed(2))
   );
 
