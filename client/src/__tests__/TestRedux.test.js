@@ -57,7 +57,10 @@ it('Logges in and check state', () => {
   expect(
     reducer(
       { loading: false },
-      { type: types.USER_LOGIN_REQUEST, payload: { loading: true } }
+      {
+        type: types.USER_LOGIN_REQUEST,
+        payload: { loading: true, userInfo: {} },
+      }
     )
   ).toEqual({ userLogin: { loading: true } });
 });
